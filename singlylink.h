@@ -14,6 +14,7 @@ class SinglyLink
 {
 public:
 
+    // 反转链表
     ListNode* reverseList(ListNode* head){
         ListNode *l(0), r(head);
         while(r){
@@ -25,6 +26,7 @@ public:
         return l;
     }
     
+    // 合并两个有序链表
     ListNode* mergeTowLists(ListNode* list1, ListNode* list2){
         if (!list1) return list2;
         if (!list2) return list1;
@@ -46,6 +48,7 @@ public:
         return ret;
     }
 
+    // 判断回文链表
     bool isPalindrome(ListNode *head){
         ListNode *s(head), *f(head);
         
@@ -65,7 +68,8 @@ public:
         }
         return true;
     }
-
+    
+    // 判断环形链表
     bool hasCycle(ListNode* head){
         ListNode *f(head), *s(head);
         
@@ -78,6 +82,7 @@ public:
 
         return false;
     }
+
 
 };
 
